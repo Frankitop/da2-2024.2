@@ -21,7 +21,7 @@ namespace WebApi.Controllers
         }
 
         [HttpGet]
-        [AuthenticationFilter]
+        //[AuthenticationFilter]
         public IActionResult GetMovieByPostfix([FromQuery] string? endsWith)
         {
             List<Movie> movies = _movieLogic.GetMoviesByPostix(endsWith);
@@ -52,7 +52,7 @@ namespace WebApi.Controllers
             return Created(string.Empty, response);
         }
         
-        [HttpGet("/importer")]
+        [HttpGet("/importers")]
         public IActionResult ImportersName()
         {
             var availableImporters = _importerLogic.GetAllImporters();
