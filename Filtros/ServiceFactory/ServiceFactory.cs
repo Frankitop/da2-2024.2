@@ -14,6 +14,8 @@ namespace APIServiceFactory
         {
             serviceCollection.AddScoped<IMovieLogic, MovieLogic>();
             serviceCollection.AddScoped<IMovieRepository, MovieRepository>();
+            
+            serviceCollection.AddScoped<IImporterLogic, ImporterLogic>();
         }
 
         public static void AddConnectionString(this IServiceCollection serviceCollection, string connectionString)
