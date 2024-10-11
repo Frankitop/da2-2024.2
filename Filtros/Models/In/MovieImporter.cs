@@ -1,6 +1,6 @@
 using Domain;
 
-namespace Models.Out;
+namespace Models.In;
 
 public class MovieImporter
 {

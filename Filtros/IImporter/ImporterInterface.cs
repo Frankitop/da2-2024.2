@@ -1,4 +1,5 @@
-﻿using Models.Out;
+﻿using Models.In;
+using Models.Out;
 
 namespace IImporter;
 

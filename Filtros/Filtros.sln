@@ -27,6 +27,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDataAccess", "TestDataA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IImporter", "IImporter\IImporter.csproj", "{E1668537-600A-4954-991B-AD35EB9B820E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportersCSV", "ImportersCSV\ImportersCSV.csproj", "{80B09727-20DD-472D-A199-D9BC776EAE33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportersJSON", "ImportersJSON\ImportersJSON.csproj", "{340CAF28-D61D-46FB-88AB-6CE1B65AD8BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{E1668537-600A-4954-991B-AD35EB9B820E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1668537-600A-4954-991B-AD35EB9B820E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1668537-600A-4954-991B-AD35EB9B820E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B09727-20DD-472D-A199-D9BC776EAE33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B09727-20DD-472D-A199-D9BC776EAE33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B09727-20DD-472D-A199-D9BC776EAE33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B09727-20DD-472D-A199-D9BC776EAE33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340CAF28-D61D-46FB-88AB-6CE1B65AD8BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340CAF28-D61D-46FB-88AB-6CE1B65AD8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340CAF28-D61D-46FB-88AB-6CE1B65AD8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340CAF28-D61D-46FB-88AB-6CE1B65AD8BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
