@@ -3,11 +3,6 @@ using IBusinessLogic;
 using Microsoft.AspNetCore.Mvc;
 using Models.Out;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WebApi.Controllers;
 
 namespace TestAPI
@@ -31,8 +26,9 @@ namespace TestAPI
         {
             //Arrange
             Mock<IMovieLogic> movieLogicMock = new Mock<IMovieLogic>(MockBehavior.Strict);
+            Mock<IImporterLogic> importerLogicMock = new Mock<IImporterLogic>(MockBehavior.Strict);
             movieLogicMock.Setup(logic => logic.GetMovieByTitle(It.IsAny<string>())).Returns(_movie);
-            _moviesController = new MoviesController(movieLogicMock.Object);
+            _moviesController = new MoviesController(movieLogicMock.Object,importerLogicMock.Object);
             RetrieveMovieResponse expectedResult = _retrieveMovieResponse;
 
             //Act

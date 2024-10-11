@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBusinessLogic", "TestBu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDataAccess", "TestDataAccess\TestDataAccess.csproj", "{311E3739-0D01-4104-AD96-1F4494E3C096}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IImporter", "IImporter\IImporter.csproj", "{E1668537-600A-4954-991B-AD35EB9B820E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{311E3739-0D01-4104-AD96-1F4494E3C096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{311E3739-0D01-4104-AD96-1F4494E3C096}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{311E3739-0D01-4104-AD96-1F4494E3C096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1668537-600A-4954-991B-AD35EB9B820E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1668537-600A-4954-991B-AD35EB9B820E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1668537-600A-4954-991B-AD35EB9B820E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1668537-600A-4954-991B-AD35EB9B820E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,4 @@
-﻿using BusinessLogic;
-using Domain;
+﻿using Domain;
 using IBusinessLogic;
 using Microsoft.AspNetCore.Mvc;
 using Models.In;
@@ -13,10 +12,12 @@ namespace WebApi.Controllers
     public class MoviesController : Controller
     {
         private readonly IMovieLogic _movieLogic;
+        private readonly IImporterLogic _importerLogic;
 
-        public MoviesController(IMovieLogic movieLogic)
+        public MoviesController(IMovieLogic movieLogic, IImporterLogic importerLogic)
         {
             _movieLogic = movieLogic;
+            _importerLogic = importerLogic;
         }
 
         [HttpGet]
@@ -50,5 +51,13 @@ namespace WebApi.Controllers
             };
             return Created(string.Empty, response);
         }
+        
+        [HttpGet("/importer")]
+        public IActionResult ImportersName()
+        {
+            var availableImporters = _importerLogic.GetAllImporters();
+            return Ok(availableImporters.Select(i => i.GetName()).ToList());
+        }
+        
     }
 }

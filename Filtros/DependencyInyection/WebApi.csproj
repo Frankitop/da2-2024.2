@@ -17,8 +17,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\IBusinessLogic\IBusinessLogic.csproj" />
+    <ProjectReference Include="..\IImporter\IImporter.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\ServiceFactory\APIServiceFactory.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Importers\" />
   </ItemGroup>
 
 </Project>

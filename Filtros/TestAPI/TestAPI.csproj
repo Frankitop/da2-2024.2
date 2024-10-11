@@ -19,6 +19,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DependencyInyection\WebApi.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\IBusinessLogic\IBusinessLogic.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 
   <ItemGroup>
